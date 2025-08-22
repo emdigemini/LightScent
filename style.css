@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9b68c;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #262626;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+nav {
+  font-family: "DM Serif Text", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #262626;
+  color: white;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* INTRO SECTION */
+.intro-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12rem auto;
+  gap: 12rem;
+}
+
+.intro {
+  max-width: 750px;
+  max-height: 500px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  opacity: 0;
+  transform: translateX(-350px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.intro video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.intro.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.intro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: white;
+  border: 2px solid #262626;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: #3e2f1c;
+}
+
+.container p {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  list-style: disc;
+  margin: 1rem 0 1rem 2rem;
+  text-align: left;
+}
+
+.container ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #4a3b2a;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  gap: 0.5rem;   
+  background: white;
+  border: 1px solid #262626;   
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  max-width: 1100px;
+  padding: 50px;
+  margin: 3rem auto;
+  border-radius: 4px;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.benefits.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefits h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.8rem;
+  margin: 2rem 0 0.8rem 0;
+  color: #5a4230;
+}
+
+.benefits ul, .benefits p {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 1rem;
+  width: 550px;
+  padding: 0;
+}
+
+/* AROMAS */
+.aromas-section {
+  max-width: 90vw;
+  height: 620px;
+  margin: 1rem auto;
+}
+
+.aromas-section h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3e2f1c;
+}
+
+.aromas {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: nowrap;
+  margin: 1.4rem auto;  
+  max-width: 80vw;   
+}
+
+.aroma {
+  position: relative;
+  width: 420px;
+  height: 380px; 
+  margin: 0 1rem;
+  padding-top: 2rem;
+}
+
+.aroma-name {
+  display: block;
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.3rem;
+  color: #3e2f1c;
+  margin-bottom: 0.5rem; 
+}
+
+.aroma img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aroma img:first-child {
+  top: 40px;
+  left: 20px;
+  z-index: 1;
+  transform: rotateZ(-2deg);
+}
+
+.aroma img:last-child {
+  top: 150px;
+  left: 120px;
+  z-index: -1;
+  transform: rotateZ(-2deg);
+}
+
+.aroma img:hover {
+  transform: scale(1.05) rotateZ(1deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* SIZES */
+.sizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 550px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.all-size {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;          
+  max-width: 500px;    
+  margin: 0;
+}
+
+.all-size li {
+  list-style: none;
+}
+
+.sizes p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 5%;
+}
+
+footer .about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+footer .logo h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social a {
+  color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+  color: #8b5e3c;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer ul li {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+footer ul li:hover {
+  color: #d9b68c;
+}
+
+@media (max-width: 768px) {
+  .aromas-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .aromas-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .aromas {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    max-width: 100%;
+  }
+
+  .aroma {
+    width: 90%;
+    height: 300px; 
+    margin: 20px auto;
+    padding-top: 1rem;
+  }
+
+  .aroma img:first-child {
+    top: 20px;
+    left: 10px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .aroma img:last-child {
+    top: 100px;
+    left: 40px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .aroma-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .intro-container {
+    flex-direction: column;
+    margin: 4rem auto;
+    gap: 3rem;
+  }
+  .intro, .container {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .about {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+  footer .social {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  footer ul {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
