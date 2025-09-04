@@ -4,17 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Light Scent</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="icon" type="image/png" href="img/light_scent.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/png" href="img/products/light_scent.webp">
 </head>
 <body>
   <nav>
     <div class="logo">
-      <img src="img/light_scent.webp" alt="">
+      <a href="index.html"><img src="img/light_scent.webp" alt=""></a>
       <h1>Light Scent</h1>
     </div>
+    <ul class="nav-section">
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a class="basket" href="checkout.html">
+        <i class="bi bi-basket2-fill"></i><span class="basket-qty">0</span>
+      </a></li>
+    </ul>
   </nav>
+
+  <div class="create-account">
+    <i id="close" class="bi bi-x-lg"></i>
+    <div class="create-account-box">
+      <h2>&#127873;Create an Account and Claim Your Exclusive 50% Discount on Your First Item!</h2>
+      <div class="input-fields">
+        <input type="name" placeholder="First Name" autocomplete="none">
+        <input type="name" placeholder="Last Name" autocomplete="none">
+        <input type="email" placeholder="Email" autocomplete="none">
+        <input type="number" placeholder="Phone number" autocomplete="none">
+        <input type="password" placeholder="Create Password" autocomplete="none">
+        <input type="password" placeholder="Confirm Password" autocomplete="none">
+      </div>
+      <button type="submit">Create</button>
+    </div>
+    
+  </div>
 
   <div class="intro-container">
     <div class="intro">
@@ -46,23 +71,35 @@
   <div class="aromas">
     <div class="aroma">
       <span class="aroma-name">Midnight Brew</span>
-      <img src="img/midnight_brew2.jpg" alt="Midnight Brew">
-      <img src="img/midnight_brew.jpg" alt="Midnight Brew">
+      <div class="overlay"><p>
+        Smooth, warm and soft. My scent wraps you in comfort, melts you heart, and lifts your mood. Take a breath and you're hooked. Feel the sweetness and richess of the scent 😙
+        <a href="https://www.instagram.com/light_scent.id/" target="_blank">📩 Don't miss out! DM now 📩</a>
+      </p></div>
+      <img src="img/products/midnight_brew.jpg" alt="Midnight Brew">
+      <img src="img/products/midnight_brew2.jpg" alt="Midnight Brew">
     </div>
     <div class="aroma">
       <span class="aroma-name">Sweet Vanilla</span>
-      <img src="img/sweet_vanilla.jpg" alt="Sweet Vanilla">
-      <img src="img/sweet_vanilla2.jpg" alt="Sweet Vanilla">
+      <div class="overlay"><p>
+        A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself 🌬
+        <a href="https://www.instagram.com/light_scent.id/" target="_blank">📩 Order via DM 📩</a>
+      </p></div>
+      <img src="img/products/sweet_vanilla.jpg" alt="Sweet Vanilla">
+      <img src="img/products/sweet_vanilla2.jpg" alt="Sweet Vanilla">
     </div>
     <div class="aroma">
       <span class="aroma-name">Serene Mist</span>
-      <img src="img/serene_mist.jpg" alt="Serene Mist">
-      <img src="img/serene_mist2.jpg" alt="Serene Mist">
+      <div class="overlay"><p>
+        The calm, made from sweet yet refreshing florals. Elevate your relaxation and mood. Experience the tranquility within you 🍃
+        <a href="https://www.instagram.com/light_scent.id/" target="_blank">📩 Grab yours now, via DM 📩</a>
+      </p></div>
+      <img src="img/products/serene_mist.jpg" alt="Serene Mist">
+      <img src="img/products/serene_mist2.jpg" alt="Serene Mist">
     </div>
   </div>
 </div>
   <div class="sizes">
-    <h3>Sizes</h3>
+    <h3>Available Size</h3>
     <ul class="all-size">
       <li>Small (50g)</li>
       <li>Medium (150g)</li>
@@ -95,6 +132,6 @@
 </footer>
 
 
-<script src="main.js"></script>
+<script type="module" src="scripts/main.js"></script>
 </body>
 </html>
