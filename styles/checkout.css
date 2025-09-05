@@ -92,7 +92,7 @@ nav .logo img {
 /* PRODUCT SUMMARY */
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   margin: 4rem 14rem;
 }
@@ -339,6 +339,34 @@ nav .logo img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+.newCustomer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 12px 0;
+  gap: 4px;
+}
+
+.newCustomer p {
+  text-decoration: underline;
+}
+
+.newCustomer button {
+  padding: 8px 12px;
+  color: whitesmoke;
+  background: #262626;
+  border: none;
+  cursor: pointer;
+}
+
+.newCustomer button:hover {
+  background: #3a3a3a; 
+  color: white; 
+  transform: scale(1.02); 
+  transition: all 0.1s ease-in-out;
+}
 
 /* ========================= */
 /* MOBILE STYLES             */
@@ -418,4 +446,63 @@ nav .logo img {
   .payment-summary {
     padding: 4rem;
   }
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 5%;
+}
+
+footer .about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+footer .logo h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social a {
+  color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:nth-child(1):hover {
+  color: #1877F2;
+}
+.social a:nth-child(2):hover {
+  color: #E1306C;
+}
+
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer ul li {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+footer ul li:hover {
+  color: #d9b68c;
 }

@@ -1,4 +1,5 @@
 import { basketQty } from "../data/basket.js";
+import { toggleCreateAccount } from "./animation.js";
 
 const benefits = document.querySelector('.benefits');
 const intro = document.querySelector('.intro');
@@ -9,15 +10,8 @@ const close = document.getElementById('close');
 document.querySelector('.basket-qty').textContent = basketQty;
 
 setTimeout(()=>{
-  createAccBox.classList.add("active");
+  toggleCreateAccount(createAccBox, close);
 }, 3000);
-
-close.addEventListener('click', () => {
-  createAccBox.classList.add("remove");
-  createAccBox.addEventListener("animationend", () => {
-    createAccBox.classList.remove("active", "remove");
-  }, { once: true });
-})
 
 setTimeout(()=>{
   intro.classList.add('visible');

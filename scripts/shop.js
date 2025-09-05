@@ -36,7 +36,7 @@ updateQty();
             Price: <span class="item-price">$${formatCurrency(productItem.priceCents)}</span>
             <span class="product-sold">${productItem.sold} Sold&#x1F525;</span>
           </p>
-          <span class="product-rate"><img src="img/ratings/rating-40.png" alt="">(${productItem.sold})</span>
+          <span class="product-rate"><img src="img/ratings/rating-${productItem.rating.stars}.png" alt="">(${productItem.sold})</span>
 
           <div class="product-actions">
             <button class="addToBasket" data-product-id="${productItem.id}">Add to Basket</button>
