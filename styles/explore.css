@@ -15,130 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-/* CREATE ACCOUNT */
-.create-account {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 700px;
-  margin: 50px auto;
-  padding: 2rem;
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", sans-serif;
-  z-index: 999;
-  display: none;
-}
-
-.create-account.active {
-  display: block;
-  animation: slideIn 1.5s;
-}
-
-.create-account.remove {
-  animation: slideOut 1.5s;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translate(1000px, -50%); 
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, -50%); 
-    opacity: 1;
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    transform: translate(-50%, -50%); 
-    opacity: 1;
-  }
-  100% {
-    transform: translate(1000px, -50%); 
-    opacity: 0;
-  }
-}
-
-.create-account i {
-  position: absolute;   
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
-  color: #555;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.create-account i:hover {
-  transform: scale(1.05);
-}
-
-.create-account-box {
-  margin: 4rem;
-}
-
-.create-account h2 {
-  font-family: "DM Serif Text", serif;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
-  padding: 0 10px;
-}
-
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.input-fields input {
-  padding: 12px 20px;
-  font-size: 1rem;
-  border: 2px solid #d9b68c; 
-  border-radius: 8px;
-  outline: none;
-  transition: all 0.3s ease;
-  background-color: #fffdf9;
-  color: #262626;
-}
-
-.input-fields input:focus {
-  border-color: #262626;
-  box-shadow: 0 4px 10px rgba(38,38,38,0.2);
-}
-
-.create-account button {
-  margin-top: 20px;
-  padding: 12px;
-  width: 100%;
-  color: #fff;
-  background-color: #262626;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.create-account button:hover {
-  background: #333333;
-  transform: translateY(-2px);
-}
-
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 /* NAVIGATION */
 nav {
   width: 100vw;
@@ -302,6 +178,7 @@ nav .logo img {
   max-width: 370px;
   height: 450px;
   overflow: hidden;
+  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
@@ -330,19 +207,63 @@ nav .logo img {
 
 .img-container {
   flex: 1;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #444;
+  padding: 12px;
+  background: white;
+  color: #313131;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.4);
 }
 
 .img-container img {
   width: 100%;
-  height: 100%;
+  max-height: 250px;
+  border-radius: 4px;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .img-container img:hover {
   transform: scale(1.05);
+  filter: brightness(1.05);
+  border-radius: 8px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+}
+
+.description h2 {
+  font-weight: 400;
+}
+
+.description p {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.product-rate img {
+  height: 28px;
+}
+
+.product-rate {
+  display: flex;
+  font-size: 22px;
 }
 
 .product-container button {
@@ -362,6 +283,7 @@ nav .logo img {
   background: linear-gradient(135deg, #555, #2c2c2c);
   transform: scale(1.02);
 }
+
 
 /* FOOTER */
 footer {
