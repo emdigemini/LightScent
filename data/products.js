@@ -10,7 +10,17 @@ export const products = [
       stars: 40,
       count: 87
     },
-    description: " A vibrant burst of fruity, floral, and spicy aromas blended together to create a fresher, sweeter twist that instantly uplifts your mood. The subtle warmth of vanilla lingers in the background, balancing the brightness with a comforting, smooth finish. Perfect for daily wear, this scent wraps you in an irresistible aura that's both refreshing and inviting. &#x2728; <br>Try it now and feel the sensation yourself&#x1F32C; a fragrance that stays with you from morning until night."
+    description: " A vibrant burst of fruity, floral, and spicy aromas blended together to create a fresher, sweeter twist that instantly uplifts your mood. The subtle warmth of vanilla lingers in the background, balancing the brightness with a comforting, smooth finish. Perfect for daily wear, this scent wraps you in an irresistible aura that's both refreshing and inviting. &#x2728; <br>Try it now and feel the sensation yourself&#x1F32C; a fragrance that stays with you from morning until night.",
+    keywords: [
+      "midnight brew candle",
+      "coffee inspired candle",
+      "vanilla fragrance candle",
+      "fruity floral spicy scent",
+      "long lasting aroma",
+      "relaxing home fragrance",
+      "uplifting candle scent",
+      "premium scented candle"
+    ] 
   },
   {
     
@@ -24,7 +34,17 @@ export const products = [
       stars: 50,
       count: 87
     },
-    description: "A gentle bloom of sweet, refreshing florals that soothes the mind and softens the mood. It opens with a light, airy freshness &#x1F343;, then settles into a soft bouquet with just the right sweetness to comfort. Subtle green notes add a crisp lift, while a creamy base keeps everything warm and balanced. Perfect for slow mornings or winding down after a long day, this scent lingers beautifully with effortless serenity. &#x2728; <br>Try it now and feel the calm for yourself &#x1F32C;."
+    description: "A gentle bloom of sweet, refreshing florals that soothes the mind and softens the mood. It opens with a light, airy freshness &#x1F343;, then settles into a soft bouquet with just the right sweetness to comfort. Subtle green notes add a crisp lift, while a creamy base keeps everything warm and balanced. Perfect for slow mornings or winding down after a long day, this scent lingers beautifully with effortless serenity. &#x2728; <br>Try it now and feel the calm for yourself &#x1F32C;.",
+    keywords: [
+      "serene mist candle",
+      "floral fragrance candle",
+      "airy fresh candle scent",
+      "calming home fragrance",
+      "green notes candle",
+      "soft bouquet aroma",
+      "soothing scented candle",
+      "relaxing daily candle"
+    ]
   },
   {
     id: 'candle-1mrla0ke9',
@@ -37,7 +57,17 @@ export const products = [
       stars: 45,
       count: 87
     },
-    description: "A bold burst of fruity, floral, and spicy notes that give you a fresher, sweeter twist with every spritz. The smooth touch of vanilla adds warmth and comfort, making this scent irresistible from the very first wear. &#x2728; Designed to be your go-to fragrance for any occasion, it keeps you feeling confident, refreshed, and unforgettable all day long. <br>Try it now and experience the sensation yourself &#x1F32C;."
+    description: "A bold burst of fruity, floral, and spicy notes that give you a fresher, sweeter twist with every spritz. The smooth touch of vanilla adds warmth and comfort, making this scent irresistible from the very first wear. &#x2728; Designed to be your go-to fragrance for any occasion, it keeps you feeling confident, refreshed, and unforgettable all day long. <br>Try it now and experience the sensation yourself &#x1F32C;.",
+    keywords: [
+      "sweet vanilla candle",
+      "vanilla fragrance candle",
+      "fruity floral vanilla scent",
+      "warm comforting aroma",
+      "everyday use candle",
+      "irresistible vanilla candle",
+      "premium vanilla scented candle",
+      "refreshing all day candle"
+    ]
   },
   {
     id: 'candle-e3zrm8tun',
@@ -50,7 +80,17 @@ export const products = [
       stars: 45,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "midnight brew candle",
+      "coffee inspired candle",
+      "vanilla fragrance candle",
+      "fruity floral spicy scent",
+      "long lasting aroma",
+      "relaxing home fragrance",
+      "uplifting candle scent",
+      "premium scented candle"
+    ] 
   },
   {
     id: 'candle-t8e4au0h4',
@@ -63,7 +103,17 @@ export const products = [
       stars: 40,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "serene mist candle",
+      "floral fragrance candle",
+      "airy fresh candle scent",
+      "calming home fragrance",
+      "green notes candle",
+      "soft bouquet aroma",
+      "soothing scented candle",
+      "relaxing daily candle"
+    ]
   },
   {
     id: 'candle-4p67fkloa',
@@ -76,7 +126,17 @@ export const products = [
       stars: 35,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "sweet vanilla candle",
+      "vanilla fragrance candle",
+      "fruity floral vanilla scent",
+      "warm comforting aroma",
+      "everyday use candle",
+      "irresistible vanilla candle",
+      "premium vanilla scented candle",
+      "refreshing all day candle"
+    ]
   },
   {
     id: 'candle-vpy7qqpj2',
@@ -89,7 +149,17 @@ export const products = [
       stars: 45,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "midnight brew candle",
+      "coffee inspired candle",
+      "vanilla fragrance candle",
+      "fruity floral spicy scent",
+      "long lasting aroma",
+      "relaxing home fragrance",
+      "uplifting candle scent",
+      "premium scented candle"
+    ] 
   },
   {
     id: 'candle-6ul4gzrpx',
@@ -102,7 +172,17 @@ export const products = [
       stars: 35,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "serene mist candle",
+      "floral fragrance candle",
+      "airy fresh candle scent",
+      "calming home fragrance",
+      "green notes candle",
+      "soft bouquet aroma",
+      "soothing scented candle",
+      "relaxing daily candle"
+    ]
   },
   {
     id: 'candle-djhht7o72',
@@ -115,6 +195,16 @@ export const products = [
       stars: 30,
       count: 87
     },
-    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;."
+    description: "A burst of fruity, floral, and spicy aromas for a fresher, sweeter twist. Let this vanilla scent be your daily companion. Try now and feel the sensation yourself&#x1F32C;.",
+    keywords: [
+      "sweet vanilla candle",
+      "vanilla fragrance candle",
+      "fruity floral vanilla scent",
+      "warm comforting aroma",
+      "everyday use candle",
+      "irresistible vanilla candle",
+      "premium vanilla scented candle",
+      "refreshing all day candle"
+    ]
   },
 ]
