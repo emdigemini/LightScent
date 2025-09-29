@@ -115,6 +115,7 @@
 }
 
 .create-account-box {
+  position: relative;
   background: #fffdfa;
   padding: 2rem;
   border-radius: 12px;

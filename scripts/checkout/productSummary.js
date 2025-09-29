@@ -34,7 +34,7 @@ export function renderSummaryHTML(){
         </div>
       `
   })
-  document.querySelector('.product-container').innerHTML = summaryHTML;
+  document.querySelector('.product-container').innerHTML = summaryHTML || '<p class="empty-state">Your cart is empty 🛒<br>Order your first item.</p>';
 
   function editProduct() {
   document.querySelectorAll('.edit-link').forEach(editLink => {

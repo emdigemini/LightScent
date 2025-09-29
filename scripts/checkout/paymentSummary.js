@@ -18,7 +18,7 @@ export function renderPaymentSummary() {
     return total + (itemPrice * product.qty);
   }, 0);
 
-  const shippingCost = 12.00;
+  const shippingCost = subtotal > 10 ? 9.00 : 0;
   const estimatedTax = calculateTax(subtotal + shippingCost, 0.08);
   const grandTotal = subtotal + shippingCost;
 
