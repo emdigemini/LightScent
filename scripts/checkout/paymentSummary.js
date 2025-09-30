@@ -19,8 +19,8 @@ export function renderPaymentSummary() {
   }, 0);
 
   const shippingCost = subtotal > 10 ? 9.00 : 0;
-  const estimatedTax = calculateTax(subtotal + shippingCost, 0.08);
-  const grandTotal = subtotal + shippingCost;
+  const estimatedTax = Number(formatCurrency(calculateTax(subtotal + shippingCost, 0.09)));
+  const grandTotal = subtotal + shippingCost + estimatedTax;
 
   document.querySelector('.payment-container').innerHTML = `
     <div class="payment-summary">
@@ -35,7 +35,7 @@ export function renderPaymentSummary() {
         Shipping Cost: <span>${formatAmount(shippingCost)}</span>
       </div>
       <div class="estimated-tax">
-        Estimated Tax: <span>${formatAmount(Number(formatCurrency(estimatedTax)))}</span>
+        Estimated Tax: <span>$${estimatedTax}</span>
       </div>
       <div class="total-cost">
         <h3>Total: <span>${formatAmount(grandTotal)}</span></h3>
